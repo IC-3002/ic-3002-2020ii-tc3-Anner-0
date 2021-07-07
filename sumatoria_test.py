@@ -35,7 +35,7 @@ class PruebasSumatoria(unittest.TestCase):
             if isinstance(k, big_o.complexities.ComplexityClass):
                 residual = v
                 r2 = 1 - residual / (ys.size * ys.var())
-                print(k, f' (r={residual}, r^2={r2})')
+                print(k, f' (r={residual}, r^2={r2}) ')
 
         if not isinstance(best, big_o.complexities.Cubic):
             warnings.warn(
